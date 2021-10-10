@@ -11,7 +11,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@friendly-octo-spoon/my-design-system-button": "^1.0.0",
+    "@friendly-octo-spoon/my-design-system-button": "^0.1.0",
+    "@friendly-octo-spoon/my-design-system-core": "^0.2.0",
     "jest": "^27.2.5"
   }
 }
