@@ -6,7 +6,11 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "yes": true
+      "yes": true,
+      "registry": " https://npm.pkg.github.com"
+    },
+    "version": {
+      "message": "chore(release): publish %s"
     }
   }
 }
