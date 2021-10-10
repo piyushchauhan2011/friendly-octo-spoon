@@ -1,0 +1,30 @@
+{
+  "name": "friendly-octo-spoon",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "git@github.com:piyushchauhan2011/friendly-octo-spoon.git",
+  "author": "Piyush Chauhan <piyushchauhan2011@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "cross-env": "^7.0.3",
+    "husky": "^7.0.2",
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "release": "cross-env HUSKY_BYPASS=true lerna publish"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

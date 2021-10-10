@@ -1,0 +1,17 @@
+{
+  "name": "@friendly-octo-spoon/my-design-system-form",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "type": "module",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@friendly-octo-spoon/my-design-system-button": "^1.0.0",
+    "jest": "^27.2.5"
+  }
+}
