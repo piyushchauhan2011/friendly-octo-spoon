@@ -15,7 +15,8 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "release": "cross-env HUSKY_BYPASS=true lerna publish"
+    "version-packages": "cross-env HUSKY_BYPASS=true lerna version",
+    "release": "cross-env HUSKY_BYPASS=true lerna publish from-git --yes"
   },
   "husky": {
     "hooks": {
